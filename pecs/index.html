@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aaron Patrick Magtoto | Portfolio</title>
+
+<style>
+/* BODY WITH BLACK-AND-WHITE THEME */
+body{
+  background: #000; /* black background */
+  color: #fff; /* white text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* SUBTLE CODE-LIKE GRID BACKGROUND */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+      0deg,
+      rgba(255,255,255,0.05),
+      rgba(255,255,255,0.05) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255,255,255,0.05),
+      rgba(255,255,255,0.05) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* HEADER */
+header{
+  background: #111; /* very dark gray */
+  color:white;
+  padding:25px;
+  text-align:center;
+  position: relative;
+  z-index: 1;
+}
+
+header h1{
+  font-size:30px;
+  letter-spacing:2px;
+}
+
+/* NAV */
+nav{
+  margin-top:10px;
+}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+  margin:0 15px;
+  font-size:15px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#bbb; /* light gray highlight */
+}
+
+/* CONTAINER */
+.container{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
+  padding:60px 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* HERO */
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:40px;
+}
+
+.hero-text{
+  flex:1;
+}
+
+.hero-text h2{
+  font-size:38px;
+  color:#fff; /* white highlight */
+  margin-bottom:10px;
+}
+
+.hero-text p{
+  font-size:18px;
+  color:#ccc; /* light gray for paragraphs */
+  margin-bottom:10px;
+}
+
+.hero-img{
+  flex:1;
+  text-align:center;
+}
+
+.hero-img img{
+  width:260px;
+  height:260px;
+  border-radius:50%;
+  object-fit:cover;
+  border:6px solid #fff; /* white border */
+  box-shadow:0 10px 25px rgba(255,255,255,0.2);
+}
+
+/* SECTION TITLES */
+.section-title{
+  text-align:center;
+  font-size:28px;
+  margin-bottom:30px;
+  color:#fff;
+}
+
+/* ABOUT */
+.about{
+  background: #111;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(255,255,255,0.1);
+  color:#ccc;
+}
+
+.about p{
+  color:#ddd;
+  line-height:1.6;
+}
+
+/* SKILLS */
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
+}
+
+.skill{
+  background:#333; /* dark gray skill badge */
+  color:#fff;
+  padding:10px 18px;
+  border-radius:25px;
+  font-size:14px;
+  transition:0.3s;
+}
+
+.skill:hover{
+  background:#555;
+  color:#fff;
+  transform:scale(1.1);
+}
+
+/* PROJECTS */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.projects a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.project-card{
+  background: #111;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(255,255,255,0.1);
+  border-left:5px solid #fff;
+  transition:0.3s;
+  height:120px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+}
+
+.project-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 25px rgba(255,255,255,0.2);
+  background: #222;
+}
+
+.project-card h3{
+  font-size:16px;
+  color:#fff;
+}
+
+/* CONTACT */
+.contact{
+  text-align:center;
+  background: #111;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(255,255,255,0.1);
+  color:#ccc;
+}
+
+.contact p{
+  color:#ddd;
+}
+
+/* FOOTER */
+footer{
+  background: #111;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:50px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-text h2{
+    font-size:30px;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Aaron Patrick Magtoto</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="container hero">
+<div class="hero-text">
+<h2>Hello, I'm Aaron</h2>
+<p>Information Technology Student</p>
+<p>Web Developer | Application Developer | System Designer</p>
+<p>I build modern web applications and technology solutions that solve real-world problems and improve community services.</p>
+</div>
+<div class="hero-img">
+<img src="477591649_2043116442782920_8204219295337396284_n.jpg" alt="Aaron Patrick Magtoto">
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="container">
+<h2 class="section-title" id="about">About Me</h2>
+<div class="about">
+<p>I am an Information Technology student passionate about developing modern systems and applications. I enjoy building user-friendly web applications and technology solutions that help communities and organizations improve their digital services.</p>
+<br>
+<p>My interests include web development, application systems, UI/UX design, and innovative technology projects.</p>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section class="container">
+<h2 class="section-title">Skills</h2>
+<div class="skills">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Web Development</div>
+<div class="skill">System Design</div>
+<div class="skill">Database</div>
+<div class="skill">UI Design</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section class="container">
+<h2 class="section-title" id="projects">Projects</h2>
+<div class="projects">
+<a href="https://drive.google.com/file/d/17i9yEXQIro8KqcNMx9tuBytxvRK44KXS/view?usp=sharing" target="_blank">
+<div class="project-card"><h3>Midterm Task 1. Data Cleaning and Modeling</h3></div>
+</a>
+<a href="https://drive.google.com/file/d/1IIl3fNXBa4Tqx2lt7GW9g7d3p9QJwFOh/view?usp=sharing" target="_blank">
+<div class="project-card"><h3>Midterm Lab Task 2. Data Preparation and Modeling using Power Query</h3></div>
+</a>
+<a href="https://drive.google.com/file/d/1EcU4ysjA3hOOYEjI8yrWipkXgNRlFGeh/view?usp=sharing" target="_blank">
+<div class="project-card"><h3>Practice Task 2. Demo Data Analysis</h3></div>
+</a>
+<a href="https://drive.google.com/file/d/1I7QEpOmb_fHP8GEnkN1Zn3OKWAJGOhsX/view?usp=sharing" target="_blank">
+<div class="project-card"><h3>Practice Task 3. Advanced Excel Functions</h3></div>
+</a>
+<a href="https://drive.google.com/file/d/113PQjty5nGbhapXVxZBdTDp_feSqLrOP/view?usp=sharing" target="_blank">
+<div class="project-card"><h3>Practice Task 4. Data Cleaning and Prep using Power Query</h3></div>
+</a>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="container">
+<h2 class="section-title" id="contact">Contact</h2>
+<div class="contact">
+<p>Email: apmagtoto23-0246@cca.edu.ph</p>
+<p>Phone: +63 912 345 6789</p>
+<p>Location: Angeles City, Pampanga</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Aaron Patrick Magtoto | Portfolio</p>
+</footer>
+
+</body>
+</html>
