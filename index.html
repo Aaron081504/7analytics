@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aaron Patrick Magtoto | Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+background:#f4f6f9;
+color:#333;
+}
+
+/* HEADER */
+
+header{
+background:#0f172a;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+header h1{
+font-size:30px;
+letter-spacing:2px;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-size:15px;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+/* CONTAINER */
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+padding:60px 0;
+}
+
+/* HERO SECTION */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:40px;
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h2{
+font-size:38px;
+color:#0f172a;
+margin-bottom:10px;
+}
+
+.hero-text p{
+font-size:18px;
+color:#555;
+margin-bottom:10px;
+}
+
+.hero-img{
+flex:1;
+text-align:center;
+}
+
+.hero-img img{
+width:260px;
+height:260px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid #0f172a;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* SECTION TITLES */
+
+.section-title{
+text-align:center;
+font-size:28px;
+margin-bottom:30px;
+color:#0f172a;
+}
+
+/* ABOUT */
+
+.about{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* SKILLS */
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.skill{
+background:#0f172a;
+color:white;
+padding:10px 18px;
+border-radius:25px;
+font-size:14px;
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.project-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-6px);
+}
+
+.project-card h3{
+margin-bottom:10px;
+color:#0f172a;
+}
+
+.project-card p{
+font-size:14px;
+color:#555;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-text h2{
+font-size:30px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Aaron Patrick Magtoto</h1>
+
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="container hero">
+
+<div class="hero-text">
+
+<h2>Hello, I'm Aaron</h2>
+
+<p>Information Technology Student</p>
+
+<p>Web Developer | Application Developer | System Designer</p>
+
+<p>
+I build modern web applications and technology solutions
+that solve real-world problems and improve community services.
+</p>
+
+</div>
+
+<div class="hero-img">
+
+<img src="477591649_2043116442782920_8204219295337396284_n.jpg" alt="477591649_2043116442782920_8204219295337396284_n.jpg">
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="container">
+
+<h2 class="section-title" id="about">About Me</h2>
+
+<div class="about">
+
+<p>
+I am an Information Technology student passionate about developing
+modern systems and applications. I enjoy building user-friendly
+web applications and technology solutions that help communities
+and organizations improve their digital services.
+</p>
+
+<br>
+
+<p>
+My interests include web development, application systems,
+UI/UX design, and innovative technology projects.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section class="container">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Web Development</div>
+<div class="skill">System Design</div>
+<div class="skill">Database</div>
+<div class="skill">UI Design</div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section class="container">
+
+<h2 class="section-title" id="projects">Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>Real-Time Disaster Alert System</h3>
+<p>
+A mobile application that allows citizens to report incidents
+and receive disaster alerts from local government units.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Kulturan Web Application</h3>
+<p>
+A gamified learning platform designed to teach Kapampangan
+language and promote cultural heritage.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Smart Waste Detection System</h3>
+<p>
+A monitoring system that detects trash buildup in canals
+and drainage to help prevent flooding.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Pet Care Management System</h3>
+<p>
+A web application that tracks feeding schedules,
+vet appointments, and training progress for pets.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="container">
+
+<h2 class="section-title" id="contact">Contact</h2>
+
+<div class="contact">
+
+<p>Email: your@email.com</p>
+<p>Phone: +63 912 345 6789</p>
+<p>Location: Angeles City, Pampanga</p>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Aaron Patrick Magtoto | Portfolio</p>
+
+</footer>
+
+</body>
+</html>
